@@ -12,7 +12,6 @@ export default function App() {
       style={{
         flex: 1,
       }}>
-      <Text>INITI</Text>
       <LineChart
         data={{
           labels: ['January', 'February', 'March', 'April', 'May', 'June'],
@@ -31,8 +30,8 @@ export default function App() {
         }}
         width={Dimensions.get('window').width} // from react-native
         height={220}
-        yAxisLabel="$"
-        yAxisSuffix="k"
+        // yAxisLabel="$"
+        yAxisSuffix="KM"
         yAxisInterval={1} // optional, defaults to 1
         chartConfig={{
           backgroundColor: '#e26a00',
@@ -56,12 +55,39 @@ export default function App() {
           borderRadius: 16,
         }}
       />
-      <Button
+
+      <Text
+        style={{
+          alignSelf: 'center',
+        }}>
+        This Year Progress
+      </Text>
+
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+        }}>
+        <View>
+          <Text>30</Text>
+          <Text>Days</Text>
+        </View>
+        <View>
+          <Text>45.2%</Text>
+          <Text>Average</Text>
+        </View>
+        <View>
+          <Text>160 KM</Text>
+          <Text>Total</Text>
+        </View>
+      </View>
+
+      {/* <Button
         title={'refresh'}
         onPress={() => {
           setupdateData(!updateData);
         }}
-      />
+      /> */}
     </View>
   );
 }
