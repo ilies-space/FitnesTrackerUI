@@ -14,7 +14,7 @@ export default function App() {
       }}>
       <LineChart
         data={{
-          labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+          labels: ['Janu    ary', 'February', 'March', 'April', 'May', 'June'],
           datasets: [
             {
               data: [
@@ -82,12 +82,12 @@ export default function App() {
         </View>
       </View>
 
-      {/* <Button
+      <Button
         title={'refresh'}
         onPress={() => {
           setupdateData(!updateData);
         }}
-      /> */}
+      />
     </View>
   );
 }
