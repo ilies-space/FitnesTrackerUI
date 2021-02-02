@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Text, View, Dimensions, Button} from 'react-native';
 import {LineChart} from 'react-native-chart-kit';
 
-export default function App() {
+export default function Home() {
   const [updateData, setupdateData] = useState(true);
   useEffect(() => {
     console.log('update');
